@@ -1,0 +1,129 @@
+.dice {
+	position: relative;
+	width: 56px;
+	height: 56px;
+	padding: 4px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 2px #CCB885, inset 0px 2px 0px #E5E9F1, inset 0px -2px 0px #949CA8, inset 2px 0px 0px #C8CFDA, inset -2px 0px 0px #C8CFDA;
+	background: white;
+	cursor: pointer;
+}
+
+.dice.active {
+	background: #F77A42;
+	box-shadow: 0px 2px 2px #CCB885, inset 0px 2px 0px #FF9D70, inset 0px -2px 0px #A33605, inset 2px 0px 0px #F35A16, inset -2px 0px 0px #F35A16;
+}
+
+.dot {
+	position: absolute;
+	display: block;
+	width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color:#0140A0;
+	box-shadow: inset 0px -2px 0px rgba(255, 255, 255, 0.16), inset 0px 2px 0px rgba(0, 0, 0, 0.44);
+	pointer-events: none;
+}
+
+.dice[data-num="1"] .dot {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.dice[data-num="2"] .dot:first-child {
+	top: 4px;
+   left: 4px;
+}
+.dice[data-num="2"] .dot:last-child {
+	bottom: 4px;
+   right: 4px;
+}
+
+.dice[data-num="3"] .dot:first-child {
+	top: 4px;
+   left: 4px;
+}
+.dice[data-num="3"] .dot:nth-child(2) {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.dice[data-num="3"] .dot:last-child {
+	bottom: 4px;
+   right: 4px;
+}
+
+.dice[data-num="4"] .dot:first-child {
+	top: 4px;
+   left: 4px;
+}
+.dice[data-num="4"] .dot:nth-child(2) {
+	top: 4px;
+   right: 4px;
+}
+.dice[data-num="4"] .dot:nth-child(3) {
+	bottom: 4px;
+   left: 4px;
+}
+.dice[data-num="4"] .dot:last-child {
+	bottom: 4px;
+   right: 4px;
+}
+
+.dice[data-num="5"] .dot:first-child {
+	top: 4px;
+   left: 4px;
+}
+.dice[data-num="5"] .dot:nth-child(2) {
+	top: 4px;
+   right: 4px;
+}
+.dice[data-num="5"] .dot:nth-child(3) {
+	bottom: 4px;
+   left: 4px;
+}
+.dice[data-num="5"] .dot:nth-child(4) {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.dice[data-num="5"] .dot:last-child {
+	bottom: 4px;
+   right: 4px;
+}
+
+.dice[data-num="6"] .dot:first-child {
+	top: 4px;
+   left: 4px;
+}
+.dice[data-num="6"] .dot:nth-child(2) {
+	top: 4px;
+   right: 4px;
+}
+.dice[data-num="6"] .dot:nth-child(3) {
+	top: 0;
+	bottom: 0;
+	left: 4px;
+	margin: auto;
+}
+.dice[data-num="6"] .dot:nth-child(4) {
+	top: 0;
+	bottom: 0;
+	right: 4px;
+	margin: auto;
+}
+.dice[data-num="6"] .dot:nth-child(5) {
+	bottom: 4px;
+	left: 4px;
+}
+.dice[data-num="6"] .dot:last-child {
+	bottom: 4px;
+   right: 4px;
+}
